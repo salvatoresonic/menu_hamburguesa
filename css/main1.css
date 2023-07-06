@@ -1,0 +1,47 @@
+*{
+
+}
+
+body{
+
+}
+
+.nav{
+    padding: 0 40px;
+    height: 80px;
+    background-color: #f15156;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__links{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 80px;
+    right: 0;
+    background-color: #000;
+    display: grid;
+    place-items: center;
+    clip-path: circle(0 at top left);
+    transition: clip-path .8s;
+}
+
+.nav__link{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.nav__link:hover{
+    background-color: aquamarine;
+}
+
+.nav__links:target{
+    clip-path: circle(150% at top left);
+    
+}
+
+
